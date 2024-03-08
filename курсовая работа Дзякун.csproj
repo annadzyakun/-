@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A486E28-73C5-4A64-A781-AC9EDDBE88ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>курсовая_работа_Дзякун</RootNamespace>
+    <AssemblyName>курсовая работа Дзякун</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Frmsotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsotr.Designer.cs">
+      <DependentUpon>Frmsotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmgraf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmgraf.Designer.cs">
+      <DependentUpon>Frmgraf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmotchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmotchet.Designer.cs">
+      <DependentUpon>Frmotchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmyslyga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyslyga.Designer.cs">
+      <DependentUpon>Frmyslyga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sotrudniki.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <Compile Include="Заставка.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Заставка.Designer.cs">
+      <DependentUpon>Заставка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="курсовая_работаDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>курсовая_работаDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frmsotr.resx">
+      <DependentUpon>Frmsotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmgraf.resx">
+      <DependentUpon>Frmgraf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmotchet.resx">
+      <DependentUpon>Frmotchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmyslyga.resx">
+      <DependentUpon>Frmyslyga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Заставка.resx">
+      <DependentUpon>Заставка.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="курсовая_работаDataSet3.xsc">
+      <DependentUpon>курсовая_работаDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="курсовая_работаDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>курсовая_работаDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="курсовая_работаDataSet3.xss">
+      <DependentUpon>курсовая_работаDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказчик.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказчик1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\сотрудник.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\отчет.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_заказ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_заказ %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_заказчик.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_услуга.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_сотрудник.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_график.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_отчет.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-profile-3106921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказчик2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказ2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-man-cleaner-76434 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\сотрудник1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\услуга.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\отчет г.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_сотрудник %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказчик3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\услуга1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\сотрудник2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\график.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\отчет1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-icon-user-166277.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m_free-icon-user-166277.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\заказ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
